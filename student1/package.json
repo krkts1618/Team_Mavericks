@@ -1,0 +1,17 @@
+{
+  "name": "student1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buildinmodules.js",
+  "scripts": {
+     "start": "node src/app.js",
+       "dev": "node --watch src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.9"
+  }
+}

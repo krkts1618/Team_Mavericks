@@ -1,0 +1,24 @@
+const os=require("os");
+const path = require("path");
+const {URL}=require("url");
+console.log("\n==== OS MODULES====")
+console.log(os.platform());
+console.log(os.arch());
+console.log(os.hostname());
+console.log(os.totalmem());
+console.log(os.freemem());
+console.log(os.cpus());
+console.log("\n===== PATH INFORMATION =====");
+console.log("Current Directory:", process.cwd());
+const myPath = path.join("students", "data", "student.js");
+console.log("Joined Path:", myPath);
+console.log("File Name:", path.basename(myPath));
+console.log("File Extension:", path.extname(myPath));
+console.log("Directory Name:", path.dirname(myPath));
+console.log("\n=====URL MODULE====" );
+const myurl=new URL("https://example.com/products?category=electronics&id=101");
+console.log("Hostname:",myurl.hostname);
+console.log("pathname:",myurl.pathname);
+console.log("protocol:",myurl.protocol);
+console.log("category:",myurl.searchParams.get("category"));
+console.log("id:",myurl.searchParams.get("id"));
